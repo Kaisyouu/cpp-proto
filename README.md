@@ -1,0 +1,2 @@
+# cpp-proto
+some prototypes
