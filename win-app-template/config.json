@@ -1,0 +1,12 @@
+{
+  "app": {
+    "app_name": "app",
+    "title_name": "Win App",
+    "log_path": "./logs/%Y%m%d",
+    "mode": "debug"
+  },
+  "crontab": {
+    "stop": -1
+  }
+}
+
