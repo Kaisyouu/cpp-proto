@@ -35,6 +35,9 @@ if(MSVC)
     if(DEFINED CMAKE_MSVC_RUNTIME_LIBRARY)
         set_property(TARGET ${PROJECT_NAME} PROPERTY MSVC_RUNTIME_LIBRARY ${CMAKE_MSVC_RUNTIME_LIBRARY})
     endif()
+
+    # Link Dbghelp for MiniDumpWriteDump
+    target_link_libraries(${PROJECT_NAME} PRIVATE Dbghelp)
 endif()
 
 # Map MSVC runtime library to a short flavor name for install layout
